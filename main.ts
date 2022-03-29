@@ -3,4 +3,8 @@ basic.forever(function () {
     input.lightLevel(),
     255
     )
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showNumber(input.lightLevel())
+        basic.pause(100)
+    }
 })
